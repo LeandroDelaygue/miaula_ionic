@@ -1,0 +1,38 @@
+.buttons-components-page {
+
+  ion-card {
+    margin-bottom: 2em;
+  }
+
+  ion-card-content {
+    background-color: #F4F5F8;
+  }
+
+  ion-card img {
+    display: block;
+    margin: 20px auto;
+  }
+
+
+}
+.icons{
+  width: 36px !important;
+  height: 36px !important;
+}
+.img_col{
+  max-width: 100%;
+  border: 20px;
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+}
+.icons:hover:before {
+  background: none;
+}
+.icons:before {
+  background: rgba(0,255,255, 0.5);
+  transition: all .3s linear;
+}
+.far{
+  color: #32a995;
+}

@@ -1,0 +1,70 @@
+<ion-header>
+
+  <ion-navbar class="toolbar">
+    <ion-title  class="title">{{ 'LIST_MASTER_TITLE' | translate }}</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="addItem()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="content_master">
+
+  <ion-grid class="grid">
+    <ion-row>
+      <ion-col col-12 col-sm-12>
+
+
+
+          <ion-col col-12 *ngFor="let cab of this.currentItems">
+            <main class="main-principal" (click)="openItem(cab)" >
+              <ion-grid>
+                <ion-row no-margin>
+                 <!-- <ion-col col-4>
+                    <div class="date">
+                      <span class="binds"></span>
+                      <span class="month">{{ cab.ent | date:'MMM' }}</span>
+                      <h1 class="day">{{ cab.ent | date: 'dd'}}</h1>
+                    </div>
+                  </ion-col>-->
+                  <ion-col col-3 align-self-center no-padding no-margin>
+
+                    <img class="circle-pic"
+                         src="{{cab.profilePic}}" />
+                  </ion-col>
+
+
+
+                  <!--<ion-col col-4 align-self-center no-padding no-margin center>-->
+                  <!--<h4 id="h4-total" *ngIf="cab.total"> {{cab.total | currency:'':'':'4.2-2' }}</h4>-->
+                  <!--<p   *ngIf="cab.totalLineas" style="text-align: center"> Lineas {{cab.totalLineas }}</p>-->
+                  <!--</ion-col>-->
+
+                  <ion-col col-9 align-self-center no-padding no-margin center>
+
+                    <h4>{{cab.name}}</h4>
+
+                    <p >{{cab.profilePic}}</p>
+                    <p > {{cab.about}}</p>
+
+                    <p class="line"></p>
+                    <p class="estado"> {{cab.about}}</p>
+                  </ion-col>
+
+
+                </ion-row>
+
+
+              </ion-grid>
+            </main>
+          </ion-col>
+
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+</ion-content>

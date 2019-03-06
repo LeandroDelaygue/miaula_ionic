@@ -1,6 +1,41 @@
 // http://ionicframework.com/docs/v2/theming/
 
+@import "../../node_modules/ng2-reactive-forms-validators/examples/assets/css/font-awesome.min.css";
 
+.toolbar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  background:map-get($colors, primarydark) !important;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  contain: content;
+
+
+}
+
+.toolbar-title-md {
+
+  color: #f4f4f4;
+}
+.toolbar-background-md {
+  border-color: #b2b2b2;
+  background: #32a995;
+}
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These

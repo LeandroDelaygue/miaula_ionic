@@ -1,17 +1,22 @@
-<ion-header>
+<ion-header no-shadow>
 
-  <ion-navbar>
-    <ion-title>{{ 'CARDS_TITLE' | translate }}</ion-title>
+  <ion-navbar class="toolbar">
+    <ion-title class="title">{{ 'CARDS_TITLE' | translate }}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content>
+<ion-content class="card-background-page">
 
   <ion-card *ngFor="let item of cardItems">
 
-    <ion-item>
+    <img src="{{item.image}}"/>
+
+    <div class="card-title">{{item.user.name}}</div>
+    <div class="card-subtitle">{{item.date}}</div>
+
+   <!--<ion-item>
       <ion-avatar item-start>
         <img [src]="item.user.avatar">
       </ion-avatar>
@@ -43,6 +48,6 @@
           11h ago
         </ion-note>
       </ion-col>
-    </ion-row>
+    </ion-row> -->
   </ion-card>
 </ion-content>

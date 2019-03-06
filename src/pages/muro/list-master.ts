@@ -3,6 +3,7 @@ import { IonicPage, ModalController, NavController } from 'ionic-angular';
 
 import { Item } from '../../models/item';
 import { Items } from '../../providers';
+import {Detalle_muroPage} from "./detalle/detalle_muro";
 
 @IonicPage()
 @Component({
@@ -21,6 +22,7 @@ export class ListMasterPage {
    */
   ionViewDidLoad() {
   }
+
 
   /**
    * Prompt the user to add a new item. This shows our ItemCreatePage in a
@@ -47,7 +49,7 @@ export class ListMasterPage {
    * Navigate to the detail page for this item.
    */
   openItem(item: Item) {
-    this.navCtrl.push('ItemDetailPage', {
+    this.navCtrl.push('Detalle_muroPage', {
       item: item
     });
   }
